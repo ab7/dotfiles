@@ -4,3 +4,7 @@
 
 ### Python ###
 *.pyc
+
+
+### Sass ###
+.sass-cache/
