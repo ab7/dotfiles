@@ -4,6 +4,11 @@
 export PS1='😈 \W: '
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin # For homebrew
 
+# auto tab completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 
 ##########################################
 ###      Better Terminal Commands      ###
@@ -11,7 +16,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11
 alias ..='cd ..'          # Go back one dir
 alias ...='cd ../../'     # Go back two dirs
 alias ls='ls -FGa'        # More info in dir listing
-. ~/z-master/z.sh         # Jump to most used folders
+. ~/dotfiles/z.sh         # Jump to most used folders
 
 
 ##########################################
