@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/cloud/.config'
+let g:netrw_dirhist_2='/Users/cloud/Documents/hack/bit/237tools/templates'
+let g:netrw_dirhist_3='/Users/cloud/Documents/hack/bit/237tools/static'

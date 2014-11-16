@@ -6,6 +6,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic' 
 
 call vundle#end()
 
@@ -38,3 +39,14 @@ else
    highlight OverLength ctermbg=red ctermfg=white guibg=#592929
    match OverLength /\%81v.\+/
 endif
+
+" search jump settings
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+nmap \q :nohlsearch<CR>
+
+" syntastic checkers
+"let g:syntastic_javascript_checkers = ['jshint']
+"let g:syntastic_javascript_checkers = ['flake8']

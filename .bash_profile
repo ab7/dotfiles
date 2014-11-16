@@ -1,8 +1,8 @@
 ##########################################
 ###      Enviroment Configuration      ###
 ##########################################
-export PS1='😈 \W: '
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin # For homebrew
+export PS1='\[$(tput setaf 7)\]\u\[$(tput setaf 4)\]@\h \W\[$(tput setaf 7)\] $ \[$(tput sgr0)\]'
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin' # For homebrew
 
 # auto tab completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -20,16 +20,6 @@ alias ls='ls -FGa'        # More info in dir listing
 
 
 ##########################################
-###          Backup Commands           ###
-##########################################
-bkup() {
-    rsync -avE --delete ~/Documents/ "/Users/cloud/Dropbox/backup"
-    rsync -avE --delete ~/Documents/ "/Users/cloud/GoogleDrive/backup"
-}
-alias bkup=bkup
-
-
-##########################################
 ###    Google App Engine Commands      ###
 ##########################################
 gae() {
@@ -43,10 +33,15 @@ alias gae=gae
 
 
 ##########################################
-###     File and folder functions      ###
+###       Virtualenv shortcuts         ###
 ##########################################
-web() {
-    cp -r /Users/cloud/Documents/hack/git/grunt-web-boiler /Users/cloud/Documents/hack/webdev/sites
-    mv /Users/cloud/Documents/hack/webdev/sites/grunt-web-boiler /Users/cloud/Documents/hack/webdev/sites/$1
-}
-alias web=web
+# python 2
+alias venv='virtualenv venv'
+alias venv.act='. venv/bin/activate'
+alias venv.dea='deactivate'
+
+# python 3
+alias venv3='virtualenv venv3 -p /usr/local/bin/python3'
+alias venv3.act='. venv3/bin/activate'
+alias venv3.dea='deactivate'
+
