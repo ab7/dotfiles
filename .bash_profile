@@ -33,15 +33,15 @@ alias gae=gae
 
 
 ##########################################
-###       Virtualenv shortcuts         ###
+###     Python Related Shortcuts       ###
 ##########################################
-# python 2
-alias venv='virtualenv venv'
-alias venv.act='. venv/bin/activate'
-alias venv.dea='deactivate'
+# virtutalenv python 2 and 3
+alias v='virtualenv venv'
+alias v.act='. venv/bin/activate'
 
-# python 3
-alias venv3='virtualenv venv3 -p /usr/local/bin/python3'
-alias venv3.act='. venv3/bin/activate'
-alias venv3.dea='deactivate'
+alias v3='virtualenv venv3 -p /usr/local/bin/python3'
+alias v3.act='. venv3/bin/activate'
+
+# simple http server
+alias server='python -m SimpleHTTPServer 8000'
 
