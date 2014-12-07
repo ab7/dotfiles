@@ -12,3 +12,7 @@ venv3/
 
 ### Node ###
 node_modules/
+
+### vim ###
+.vim/.netrwhist
+.vim/bundle
