@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 " vundle plugin manager
 set nocompatible
 filetype off
@@ -5,21 +7,27 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic' 
+Plugin 'cakebaker/scss-syntax.vim'
+" Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
+
+" key mappings
+inoremap jk <ESC>
+let mapleader = ","
 
 " indent settings
 filetype plugin indent on
 set expandtab
 set autoindent
 set shiftround
-set smartindent
-set nowrap
 
 " enable syntax highlighting
 syntax on
+
+" no auto comment on new line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " show line numbers
 set number
@@ -47,6 +55,10 @@ set smartcase
 set hlsearch
 nmap \q :nohlsearch<CR>
 
-" syntastic checkers
-"let g:syntastic_javascript_checkers = ['jshint']
-"let g:syntastic_javascript_checkers = ['flake8']
+" word wrap
+set wrap
+set linebreak
+set nolist
+set textwidth=0
+set wrapmargin=0
+
