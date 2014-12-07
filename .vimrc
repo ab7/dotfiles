@@ -1,5 +1,3 @@
-set encoding=utf-8
-
 " vundle plugin manager
 set nocompatible
 filetype off
@@ -9,7 +7,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic' 
 Plugin 'cakebaker/scss-syntax.vim'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'Lokaltog/powerline', {'rtp':  'powerline/bindings/vim'}
 
 call vundle#end()
 
@@ -62,3 +61,12 @@ set nolist
 set textwidth=0
 set wrapmargin=0
 
+" powerline settings
+set encoding=utf8
+set termencoding=utf8
+set guifont=Source\ Code\ Pro\ for\ Powerline
+let g:Powerline_symbols='unicode'
+set t_Co=256
+set laststatus=2
+set noshowmode
+set fillchars+=stl:\ ,stlnc:\
