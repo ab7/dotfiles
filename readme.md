@@ -15,5 +15,5 @@ Then open vim and run:
     :PluginInstall
 
 
-YouComplete is disabled by default because of its many dependencies. To install, uncomment `Plugin Valloric/YouCompleteMe` and consult the [documentation](//github.com/Valloric/YouCompleteMe) to set everything up.
+YouCompleteMe is disabled by default because of its many dependencies. To install, uncomment `Plugin Valloric/YouCompleteMe` and consult the [documentation](//github.com/Valloric/YouCompleteMe) to set everything up.
 
