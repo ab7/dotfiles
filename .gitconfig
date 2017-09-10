@@ -1,6 +1,0 @@
-[user]
-	name = Alex Baker
-	email = al3xb4k3r@gmail.com
-[core]
-	autocrlf = false
-	excludesfile = /Users/cloud/.gitignore

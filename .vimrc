@@ -7,7 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic' 
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/powerline', {'rtp':  'powerline/bindings/vim'}
 
 call vundle#end()

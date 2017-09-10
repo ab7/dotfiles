@@ -5,9 +5,9 @@
 ###########################
 
 ########## Variables
-dir=~/dotfiles
+dir=~/dotfiles_mac
 olddir=~/dotfiles_old    # existing dotfiles backup dir
-files=".bash_profile .vimrc .vim .gitconfig .gitignore"
+files=".bash_profile .vimrc .vim"
 ##########
 
 # create dotfiles_old in homedir
